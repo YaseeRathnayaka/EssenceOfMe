@@ -1,22 +1,25 @@
+import { motion } from 'framer-motion';
 import logo from "../assets/kevinRushLogo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaTwitterSquare } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitterSquare, FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className=" mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <img className='mx-2 w-10' src={logo} alt="logo" />
+    <motion.nav 
+      initial={{ y: -250 }} 
+      animate={{ y: 0 }} 
+      transition={{ type: 'spring', stiffness: 120 }} 
+      className="flex items-center justify-between py-6 mb-20 text-white"
+    >
+      <div className="flex items-center flex-shrink-0">
+        <img className="w-10 mx-2" src={logo} alt="logo" />
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <FaLinkedin />
-        <FaGithub />
-        <FaInstagram />
-        <FaTwitterSquare />
+      <div className="flex items-center justify-center gap-4 m-8 text-2xl">
+        <FaLinkedin className="transition duration-300 hover:text-blue-600" />
+        <FaGithub className="transition duration-300 hover:text-gray-600" />
+        <FaInstagram className="transition duration-300 hover:text-pink-600" />
+        <FaTwitterSquare className="transition duration-300 hover:text-blue-600" />
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
