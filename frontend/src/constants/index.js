@@ -3,9 +3,16 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = ``;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `Highly motivated and detail-oriented student pursuing a BSc (Hons) in
+Computing and Information Systems. with a strong interest in project
+management and software engineering. Experienced in managing small scale projects, collaborating with cross-functional teams, and utilizing
+project management toolsand development technologies. Possess
+excellent communication, organizational, and problem-solving skills, with a
+keen ability to manage multiple tasks and deadlines effectively. Eager to
+apply academic knowledge and gain hands-on experience in a dynamic
+and fast-paced work environment.`;
 
 export const EXPERIENCES = [
   {
@@ -40,32 +47,39 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "GeneratorX",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "GeneratorX is a team project done under my leadership for remote monitoring and manual fault detection support system for generators.GeneratorX include Service management, report generation more than to the main funtions.",
+    technologies: ["React", "CSS", "Arduino", "C++", "Firebase"],
   },
   {
-    title: "Task Management App",
+    title: "MunchMate",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "MunchMate is a interesting food ordering application which infused from popular food chain KFC. This project can be expelled as a updated web application to KFC",
+    technologies: ["React", "CSS", "Express", "node","MongoDB"],
   },
   {
-    title: "Portfolio Website",
+    title: "Cash Register",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Developed a Cash Register App as part of a guided project, aimed at streamlining the checkout process for small businesses. The app allows cashier to give balance without calculating amount by showing what bills to give and amount of them. It features an intuitive user interface and integrates essential functionalities such as total, item amount and balance amount.it updates remaining currency units and their available unit amount",
+    technologies: ["React", "CSS", "Express", "node","MongoDB"],
   },
   {
-    title: "Blogging Platform",
+    title: "EssenseOfMe",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "EssenceOfMe is a simple project done using react library for the introduction of myself to the world.",
+    technologies: ["React", "Tailwind CSS", "Framer-motion"],
+  },
+  {
+    title: "De Manager",
+    image: project4,
+    description:
+      "De Manager is a team project also done under my leadership introduced based the purpose to manage appointments and work in a locally established vehicle service station.",
+    technologies: ["React", "CSS", "Express", "node","MongoDB"],
   },
 ];
 

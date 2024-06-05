@@ -1,40 +1,46 @@
 import { motion } from 'framer-motion';
-import { Parallax } from 'react-scroll-parallax';
-import { EXPERIENCES } from '../constants';
+import { FaReact, FaCss3Alt, FaHtml5, FaPython, FaJava, FaNodeJs, FaGithub, FaFigma, FaPhp } from 'react-icons/fa';
+import { SiTailwindcss, SiMongodb, SiMysql, SiPostgresql, SiFirebase, SiExpress, SiTensorflow, SiJupyter, SiArduino, SiCplusplus } from 'react-icons/si';
+
+const technologyIcons = {
+  React: <FaReact className="text-blue-500" />,
+  CSS: <FaCss3Alt className="text-blue-700" />,
+  Tailwind: <SiTailwindcss className="text-teal-500" />,
+  Python: <FaPython className="text-yellow-500" />,
+  Java: <FaJava className="text-red-600" />,
+  MongoDB: <SiMongodb className="text-green-500" />,
+  MySQL: <SiMysql className="text-blue-500" />,
+  PostgreSQL: <SiPostgresql className="text-blue-700" />,
+  Firebase: <SiFirebase className="text-yellow-500" />,
+  ExpressJS: <SiExpress className="text-gray-500" />,
+  NodeJS: <FaNodeJs className="text-green-600" />,
+  TensorFlow: <SiTensorflow className="text-orange-500" />,
+  Jupyter: <SiJupyter className="text-orange-600" />,
+  Arduino: <SiArduino className="text-blue-500" />,
+  "C++": <SiCplusplus className="text-blue-700" />,
+  GitHub: <FaGithub className="text-black" />,
+  HTML: <FaHtml5 className="text-orange-500" />,
+  Figma: <FaFigma className="text-purple-500" />,
+  PHP: <FaPhp className="text-purple-700" />,
+};
 
 const Experience = () => {
   return (
-    <Parallax speed={-3}>
-      <motion.div 
-        initial={{ opacity: 0 }} 
-        animate={{ opacity: 1 }} 
-        transition={{ duration: 1.5 }} 
-        className="my-16 text-white"
-      >
-        <h2 className="my-4 text-4xl font-semibold text-center">Experience</h2>
-        <div className="space-y-8">
-          {EXPERIENCES.map((experience, index) => (
-            <div key={index} className="flex flex-col p-4 transition duration-300 rounded-lg lg:flex-row hover:bg-gray-800">
-              <div className="lg:w-1/4">
-                <h3 className="text-2xl font-semibold">{experience.role}</h3>
-                <p className="text-xl">{experience.year}</p>
-              </div>
-              <div className="lg:w-3/4">
-                <h4 className="text-xl font-semibold">{experience.company}</h4>
-                <p className="my-2">{experience.description}</p>
-                <div className="flex flex-wrap gap-2">
-                  {experience.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="px-2 py-1 text-sm bg-gray-700 rounded">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-    </Parallax>
+    <motion.div 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }} 
+      transition={{ duration: 1.5 }} 
+      className="my-16 text-white"
+    >
+      <h2 className="my-4 text-4xl font-semibold text-center">Technologies</h2>
+      <div className="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6">
+        {Object.keys(technologyIcons).map((tech, index) => (
+          <div key={index} className="flex items-center justify-center p-4 bg-gray-800 rounded-lg">
+            {technologyIcons[tech]}
+          </div>
+        ))}
+      </div>
+    </motion.div>
   );
 };
 
