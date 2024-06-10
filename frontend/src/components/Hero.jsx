@@ -63,7 +63,7 @@ const Hero = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="pb-16 text-4xl font-semibold tracking-tight lg:mt-16 lg:text-8xl">
+            <h1 className="pb-16 text-4xl font-semibold tracking-tight lg:mt-16 lg:text-8xl" data-testid="hero-name">
               Yasindu Rathnayaka
             </h1>
             <span className="text-2xl tracking-tight text-transparent bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text">
@@ -73,7 +73,7 @@ const Hero = () => {
                 </span>
               ))}
             </span>
-            <p className="max-w-xl py-6 my-2 font-light tracking-tighter">
+            <p className="max-w-xl py-6 my-2 font-light tracking-tighter" data-testid="hero-content">
               {HERO_CONTENT}
             </p>
           </div>
